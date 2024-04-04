@@ -1,0 +1,14 @@
+<div>
+    {{#each prods}}
+    	<h2>{{name}}</h2>
+        <p>
+            cost:<b>{{cost}}</b>, rest:{{rest}}
+        </p>
+        <a href="/prods/show/{{name}}">name</a>
+        <a href="/prods/delete/{{name}}">delete</a>
+        <a href="/prods/edit/{{name}}">edit</a>
+    {{/each}}
+    </div>
+    </br>
+    <a href="/prods/add">добавить новый продукт</a>
+</div>
